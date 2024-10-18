@@ -1,0 +1,20 @@
+{
+  "editor.defaultFormatter": "denoland.vscode-deno",
+
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always"
+    }
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "denoland.vscode-deno",
+
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always"
+    }
+  }
+}
