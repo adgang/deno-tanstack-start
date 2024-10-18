@@ -1,11 +1,23 @@
 {
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "deno run --watch main.ts",
+    "devv": "deno run -A npm:vinxi dev",
+    "build": "deno run npm:vinxi build",
+    "start": "deno run npm:vinxi start"
   },
+  "type": "module",
+
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
-    "@tanstack/react-router": "npm:@tanstack/react-router@^1.70.2",
-    "@tanstack/router-devtools": "npm:@tanstack/router-devtools@^1.70.2",
-    "@tanstack/router-plugin": "npm:@tanstack/router-plugin@^1.69.1"
+    "@tanstack/react-router": "npm:@tanstack/react-router@^1.72.0",
+    "@tanstack/router-devtools": "npm:@tanstack/router-devtools@^1.72.0",
+    "@tanstack/router-plugin": "npm:@tanstack/router-plugin@^1.69.1",
+    "@tanstack/start": "npm:@tanstack/start@^1.72.0",
+    "@types/react": "npm:@types/react@^18.3.11",
+    "@types/react-dom": "npm:@types/react-dom@^18.3.1",
+    "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^4.3.2",
+    "react": "npm:react@^18.3.1",
+    "react-dom": "npm:react-dom@^18.3.1",
+    "vinxi": "npm:vinxi@^0.4.3"
   }
 }
