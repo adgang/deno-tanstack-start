@@ -8,6 +8,7 @@
   "type": "module",
 
   "imports": {
+    "@deno-plc/vite-plugin-deno": "jsr:@deno-plc/vite-plugin-deno@^2.1.9",
     "@std/assert": "jsr:@std/assert@1",
     "@tanstack/react-router": "npm:@tanstack/react-router@^1.72.0",
     "@tanstack/router-devtools": "npm:@tanstack/router-devtools@^1.72.0",
