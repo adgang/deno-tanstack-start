@@ -6,19 +6,37 @@
     "start": "deno run npm:vinxi start"
   },
   "type": "module",
+  "compilerOptions": {
+    "lib": [
+      "ESNext",
+      "ES2020",
+      "DOM",
+      "DOM.Iterable",
+      "deno.window",
+      "deno.ns",
+      "DOM.AsyncIterable",
+      "webworker"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "jsxImportSourceTypes": "@types/react"
+  },
+  "nodeModulesDir": "auto",
 
   "imports": {
     "@deno-plc/vite-plugin-deno": "jsr:@deno-plc/vite-plugin-deno@^2.1.9",
+    "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.0",
     "@std/assert": "jsr:@std/assert@1",
-    "@tanstack/react-router": "npm:@tanstack/react-router@^1.72.0",
-    "@tanstack/router-devtools": "npm:@tanstack/router-devtools@^1.72.0",
-    "@tanstack/router-plugin": "npm:@tanstack/router-plugin@^1.69.1",
-    "@tanstack/start": "npm:@tanstack/start@^1.72.0",
+    "@tanstack/react-router": "npm:@tanstack/react-router@^1.81.10",
+    "@tanstack/router-devtools": "npm:@tanstack/router-devtools@^1.81.9",
+    "@tanstack/router-plugin": "npm:@tanstack/router-plugin@^1.81.9",
+    "@tanstack/start": "npm:@tanstack/start@^1.81.10",
     "@types/react": "npm:@types/react@^18.3.11",
     "@types/react-dom": "npm:@types/react-dom@^18.3.1",
     "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^4.3.2",
     "react": "npm:react@^18.3.1",
     "react-dom": "npm:react-dom@^18.3.1",
-    "vinxi": "npm:vinxi@^0.4.3"
+    "vinxi": "npm:vinxi@^0.4.3",
+    "vite": "npm:vite@6.0.0-beta.3"
   }
 }
