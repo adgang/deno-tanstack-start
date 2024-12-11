@@ -1,6 +1,6 @@
-import { createRootRoute } from 'npm:@tanstack/react-router';
-import { Outlet, ScrollRestoration } from 'npm:@tanstack/react-router';
-import { Meta, Scripts } from 'npm:@tanstack/start';
+import { createRootRoute } from '@tanstack/react-router';
+import { Outlet, ScrollRestoration } from '@tanstack/react-router';
+import { Meta, Scripts } from '@tanstack/start';
 import * as React from 'react';
 
 export const Route = createRootRoute({

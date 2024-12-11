@@ -1,8 +1,10 @@
 // app/routes/index.tsx
 import React from 'react';
 import * as fs from 'node:fs';
-import { createFileRoute, useRouter } from 'npm:@tanstack/react-router';
-import { createServerFn } from 'npm:@tanstack/start';
+import { createFileRoute, useRouter } from '@tanstack/react-router';
+import { createServerFn } from '@tanstack/start';
+import { useLoaderData } from '@tanstack/react-router';
+import { useQuery } from '@tanstack/react-query';
 
 const filePath = 'count.txt';
 
@@ -30,8 +32,14 @@ export const Route = createFileRoute('/')({
 });
 
 function Home() {
+  // throw new Error('blah');
+  console.log('---');
   const router = useRouter();
-  const state = Route.useLoaderData();
+  console.log('====');
+  const { data: state, isLoading: _isLoading } = useQuery({
+    queryKey: ['xxx'],
+    queryFn: () => 78,
+  });
 
   return (
     <button
