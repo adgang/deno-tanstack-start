@@ -12,8 +12,22 @@
 
 import { Route as rootRoute } from './routes/__root.tsx'
 import { Route as IndexImport } from './routes/index.tsx'
-
+import routerNameSpace from '@tanstack/react-router'
+declare global{
+  namespace routerNameSpace {
+    interface FileRoutesByPath {
+      '/': {
+        id: '/'
+        path: '/'
+        fullPath: '/'
+        preLoaderRoute: typeof IndexImport
+        parentRoute: typeof rootRoute
+      }
+    }
+  }
+}
 // Create/Update Routes
+//
 
 const IndexRoute = IndexImport.update({
   id: '/',
@@ -23,17 +37,17 @@ const IndexRoute = IndexImport.update({
 
 // Populate the FileRoutesByPath interface
 
-declare module '@tanstack/react-router' {
-  interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexImport
-      parentRoute: typeof rootRoute
-    }
-  }
-}
+// declare module '@tanstack/react-router' {
+//   interface FileRoutesByPath {
+//     '/': {
+//       id: '/'
+//       path: '/'
+//       fullPath: '/'
+//       preLoaderRoute: typeof IndexImport
+//       parentRoute: typeof rootRoute
+//     }
+//   }
+// }
 
 // Create and export the route tree
 
