@@ -2,7 +2,8 @@
   "editor.defaultFormatter": "denoland.vscode-deno",
 
   "deno": {
-    "enable": true
+    "enable": true,
+    "config": "deno.json"
   },
   "editor.formatOnSave": true,
   "[javascript]": {

@@ -2,7 +2,9 @@
   "fmt": {
     "semiColons": true,
     "indentWidth": 2,
-    "singleQuote": true
+    "singleQuote": true,
+
+    "exclude": ["node_modules", ".git", "**/routeTree.gen.ts"]
   },
   "tasks": {
     "dev": "deno run --watch main.ts",
