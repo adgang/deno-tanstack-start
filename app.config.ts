@@ -11,6 +11,9 @@ import ssr from "npm:vike-react/plugin";
 import path from "node:path";
 
 export default defineConfig({
+    tsr: {
+        addExtensions: true,
+    },
     vite: {
         plugins: [
             // deno(),
