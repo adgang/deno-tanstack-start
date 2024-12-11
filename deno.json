@@ -1,4 +1,9 @@
 {
+  "fmt": {
+    "semiColons": true,
+    "indentWidth": 2,
+    "singleQuote": true
+  },
   "tasks": {
     "dev": "deno run --watch main.ts",
     "devv": "deno run -A npm:vinxi dev",
