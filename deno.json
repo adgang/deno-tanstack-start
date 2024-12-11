@@ -4,7 +4,7 @@
     "indentWidth": 2,
     "singleQuote": true,
 
-    "exclude": ["node_modules", ".git", "**/routeTree.gen.ts"]
+    "exclude": ["node_modules", ".git", "app/routeTree.gen.ts"]
   },
   "tasks": {
     "dev": "deno run --watch main.ts",
