@@ -26,8 +26,8 @@ declare global{
     }
   }
 }
+
 // Create/Update Routes
-//
 
 const IndexRoute = IndexImport.update({
   id: '/',
